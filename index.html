@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Gustavo Henrique Santos e Silva, estudante de Ciência da Computação na PUC Minas. Projetos, trajetória e contato.">
+  <meta name="theme-color" content="#2563eb">
+  <title>Gustavo Santos | Portfólio Profissional</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js?v=4" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#principal" data-traducao="skip">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container conteudo-menu d-flex align-items-center gap-3">
+      <a class="marca d-flex align-items-center gap-2 fw-bold" href="#sobre" data-rotulo="homeLabel" aria-label="Gustavo Santos — início">
+        <span class="icone-marca" aria-hidden="true"></span><span>Gustavo Santos</span>
+      </a>
+      <nav id="menu" class="navegacao ms-auto gap-3" data-rotulo="navigation" aria-label="Navegação principal">
+        <a href="#sobre" class="ativo" aria-current="location" data-traducao="about">Sobre Mim</a>
+        <a href="#projetos" data-traducao="projects">Projetos</a>
+        <a href="#experiencias" data-traducao="experience">Experiências</a>
+        <a href="#contato" data-traducao="contact">Contato</a>
+      </nav>
+      <div class="controles-menu d-flex align-items-center gap-2">
+        <button id="trocar-idioma" class="botao-idioma btn btn-light border btn-sm" type="button" aria-label="Switch to English" title="Switch to English">
+          <span lang="pt-BR" class="selecionado" id="indicador-pt">PT</span><span aria-hidden="true"> / </span><span lang="en" id="indicador-en">EN</span>
+        </button>
+        <button id="abrir-menu" class="botao-menu btn btn-light d-md-none" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+          <img src="assets/icons/mobile-menu.svg" width="20" height="20" alt="" id="icone-menu">
+          <span class="icone-fechar" aria-hidden="true">×</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <button class="fundo-menu" id="fundo-menu" type="button" aria-label="Fechar menu" data-rotulo="closeMenu" tabindex="-1" hidden></button>
+  <main id="principal">
+    <section id="sobre" class="secao-sobre" aria-labelledby="nome-titulo">
+      <div class="container">
+        <div class="apresentacao row align-items-center g-4">
+          <div class="moldura-foto col-md-3 text-center">
+            <picture>
+              <source media="(max-width: 767px)" srcset="assets/images/gustavo.jpg" id="foto-celular">
+              <img id="foto" class="foto-perfil" src="assets/images/gustavo.jpg" width="260" height="260" alt="Foto de Gustavo Henrique Santos e Silva" data-descricao="portraitAlt">
+            </picture>
+          </div>
+          <div class="biografia col-md-9">
+            <h1 id="nome-titulo" class="fw-bold">Gustavo Henrique Santos e Silva</h1>
+            <p class="subtitulo text-primary" data-traducao="subtitle">Estudante de Ciência da Computação — PUC Minas</p>
+            <p class="descricao mb-0" data-traducao="bio">Olá! Sou Gustavo Henrique Santos e Silva, estudante do 2º período de Ciência da Computação na PUC Minas, em Belo Horizonte. Gosto de programar, de aprender coisas novas e de reunir, orientar e ajudar pessoas. Meu objetivo é aprender sem me limitar, atuar em uma big tech e, no futuro, fundar minha própria empresa.</p>
+          </div>
+        </div>
+        <div class="informacoes row g-3 mt-5">
+          <div class="col-md-4">
+          <article class="informacao bg-light border rounded h-100 p-4">
+            <h2 class="h6 fw-bold d-flex align-items-center gap-2"><img src="assets/icons/graduation-cap.svg" width="20" height="20" alt=""><span data-traducao="education">Formação</span></h2>
+            <p data-traducao="educationText">Ciência da Computação — PUC Minas (2026–atual)</p>
+          </article>
+          </div>
+          <div class="col-md-4">
+          <article class="informacao bg-light border rounded h-100 p-4">
+            <h2 class="h6 fw-bold d-flex align-items-center gap-2"><img src="assets/icons/code-square.svg" width="20" height="20" alt=""><span data-traducao="interests">Interesses</span></h2>
+            <p data-traducao="interestsText">Programação, liderança, empreendedorismo</p>
+          </article>
+          </div>
+          <div class="col-md-4">
+          <article class="informacao bg-light border rounded h-100 p-4">
+            <h2 class="h6 fw-bold d-flex align-items-center gap-2"><img src="assets/icons/rocket.svg" width="20" height="20" alt=""><span data-traducao="goals">Objetivos</span></h2>
+            <p data-traducao="goalsText">Big tech e empresa própria</p>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projetos" class="secao-projetos" aria-labelledby="titulo-projetos">
+      <div class="container">
+        <div class="titulo-secao mb-5"><p class="legenda text-primary text-uppercase small" data-traducao="portfolio">Portfólio</p><h2 id="titulo-projetos" data-traducao="projects">Projetos</h2></div>
+        <ol id="lista-projetos" class="linha-tempo"></ol>
+        <noscript><p>Ative o JavaScript para ver os projetos, trocar o idioma e usar o formulário.</p></noscript>
+      </div>
+    </section>
+    <section id="experiencias" class="secao-experiencias" aria-labelledby="titulo-experiencias">
+      <div class="container conteudo-experiencias">
+        <div class="titulo-secao mb-5"><p class="legenda text-primary text-uppercase small" data-traducao="journey">Trajetória</p><h2 id="titulo-experiencias" data-traducao="experience">Experiências</h2></div>
+        <article class="experiencia bg-light border rounded p-4">
+          <div class="cabecalho-experiencia d-flex justify-content-between gap-3 mb-3">
+            <div><h3 data-traducao="experienceRole">Integração com Equipe — Startup Universitária</h3><p class="instituicao text-primary mb-0" data-traducao="experienceInstitution">Startup fundada por veteranos — PUC Minas</p></div>
+            <p class="periodo border rounded bg-white px-3 py-2 mb-0" data-traducao="experiencePeriod">2026 — atual</p>
+          </div>
+          <p data-traducao="experienceText">Participação em fase de integração e testes com o time de uma empresa criada e patrocinada por alunos veteranos do curso de Ciência da Computação da PUC Minas. Atuação em desenvolvimento, testes e colaboração com a equipe.</p>
+        </article>
+      </div>
+    </section>
+    <section id="contato" class="secao-contato" aria-labelledby="titulo-contato">
+      <div class="container">
+        <div class="titulo-secao mb-5"><p class="legenda text-primary text-uppercase small" data-traducao="contact">Contato</p><h2 id="titulo-contato" data-traducao="contact">Contato</h2></div>
+        <div class="area-contato row g-4">
+          <div class="col-md-4">
+          <address class="contatos d-flex flex-column gap-3">
+            <a class="contato d-flex align-items-center gap-3" href="mailto:gusalkimim@gmail.com" aria-label="E-mail: gusalkimim@gmail.com" data-rotulo="emailContact">
+              <span class="icone-contato"><img src="assets/icons/mail.svg" width="18" height="18" alt=""></span><span class="valor-contato">gusalkimim@gmail.com</span>
+            </a>
+            <a class="contato d-flex align-items-center gap-3" id="contato-whatsapp" href="https://wa.me/5531982665639"
+               target="_blank" rel="noopener noreferrer" aria-label="Conversar com Gustavo no WhatsApp (abre em nova aba)" data-rotulo="whatsappContact">
+              <span class="icone-contato"><img src="assets/icons/phone.svg" width="18" height="18" alt=""></span><span class="valor-contato">+55 (31) 98266-5639</span>
+            </a>
+            <a class="contato d-flex align-items-center gap-3" href="https://linkedin.com/in/gustavo-alkimim-73091b24a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gustavo (abre em nova aba)" data-rotulo="linkedinContact">
+              <span class="icone-contato"><img src="assets/icons/linkedin.svg" width="18" height="18" alt=""></span><span class="valor-contato">LinkedIn</span>
+            </a>
+            <a class="contato d-flex align-items-center gap-3" href="https://github.com/gustavoalkimim" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Gustavo (abre em nova aba)" data-rotulo="githubContact">
+              <span class="icone-contato"><img src="assets/icons/github1.svg" width="18" height="18" alt=""></span><span class="valor-contato">GitHub</span>
+            </a>
+          </address>
+          </div>
+          <div class="col-md-8">
+          <form id="form-contato" class="formulario bg-light border rounded p-4" novalidate aria-labelledby="titulo-formulario">
+            <h3 id="titulo-formulario" data-traducao="formTitle">Fale comigo</h3>
+            <div class="campo mb-3">
+              <label class="form-label" for="nome" data-traducao="name">Nome</label>
+              <input class="form-control" id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" data-exemplo="namePlaceholder" required maxlength="100" aria-describedby="nome-erro">
+              <p class="erro-campo" id="nome-erro" hidden></p>
+            </div>
+            <div class="campo mb-3">
+              <label class="form-label" for="email" data-traducao="email">E-mail</label>
+              <input class="form-control" id="email" name="email" type="email" autocomplete="email" placeholder="seu@email.com" data-exemplo="emailPlaceholder" required maxlength="254" aria-describedby="email-erro">
+              <p class="erro-campo" id="email-erro" hidden></p>
+            </div>
+            <div class="campo mb-3">
+              <label class="form-label" for="mensagem" data-traducao="message">Mensagem</label>
+              <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Deixe uma mensagem..." data-exemplo="messagePlaceholder" required maxlength="5000" aria-describedby="mensagem-erro"></textarea>
+              <p class="erro-campo" id="mensagem-erro" hidden></p>
+            </div>
+            <button id="enviar" class="btn btn-primary" type="submit" data-traducao="send">Enviar</button>
+            <p id="retorno-formulario" class="retorno" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape d-flex justify-content-center align-items-center gap-3 py-4">
+    <p class="mb-0">© 2026 Gustavo Henrique Santos e Silva</p>
+    <div class="redes-rodape d-flex gap-2">
+      <a href="https://github.com/gustavoalkimim" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Gustavo (abre em nova aba)" data-rotulo="githubContact"><img src="assets/icons/github2.svg" width="14" height="14" alt=""></a>
+      <a href="https://linkedin.com/in/gustavo-alkimim-73091b24a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gustavo (abre em nova aba)" data-rotulo="linkedinContact"><img src="assets/icons/linkedin1.svg" width="14" height="14" alt=""></a>
+    </div>
+  </footer>
+</body>
+</html>

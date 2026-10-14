@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Geist;
+    src: url('assets/fonts/geist-400.ttf');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: Geist;
+    src: url('assets/fonts/geist-500.ttf');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: Geist;
+    src: url('assets/fonts/geist-700.ttf');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Geist Mono';
+    src: url('assets/fonts/geist-mono-400.ttf');
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+body {
+    font-family: Geist, Arial, sans-serif;
+    color: #475569;
+    line-height: 1.6;
+    --bs-primary-rgb: 37, 99, 235;
+    --bs-light-rgb: 241, 245, 249;
+}
+.container { max-width: 1200px; }
+h1, h2, h3 { color: #0f172a; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+:focus-visible { outline: 3px solid #2563eb; outline-offset: 4px; }
+[hidden] { display: none !important; }
+main section { padding: 80px 0; }
+.btn { min-height: 44px; }
+.btn-primary { background-color: #2563eb; border-color: #2563eb; }
+.btn-primary:hover { background-color: #1d4ed8; border-color: #1d4ed8; }
+.pular-conteudo { position: fixed; top: -100px; left: 16px; z-index: 20; padding: 12px; background: white; }
+.pular-conteudo:focus { top: 8px; }
+
+/* Cabeçalho e menu */
+.cabecalho { position: sticky; top: 0; z-index: 10; background: white; border-bottom: 1px solid #e2e8f0; }
+.conteudo-menu { min-height: 80px; }
+.marca { color: #0f172a; font-size: 20px; white-space: nowrap; }
+.icone-marca { width: 32px; height: 32px; border-radius: 4px; background: #2563eb; }
+.navegacao { display: flex; }
+.navegacao a { color: #475569; font-size: 15px; }
+.navegacao .ativo { color: #2563eb; }
+.botao-idioma { font-family: 'Geist Mono', monospace; font-size: 12px; white-space: nowrap; }
+.selecionado { color: #0f172a; font-weight: bold; }
+.botao-menu { width: 44px; }
+.botao-menu img { margin: auto; }
+.icone-fechar { display: none; font-size: 24px; line-height: 1; }
+.botao-menu[aria-expanded='true'] img { display: none; }
+.botao-menu[aria-expanded='true'] .icone-fechar { display: block; }
+.fundo-menu { position: fixed; inset: 80px 0 0; z-index: 9; border: 0; background: rgba(15, 23, 42, 0.2); }
+
+/* Apresentação */
+.foto-perfil { width: 260px; height: 260px; padding: 8px; border: 1px solid #e2e8f0; border-radius: 50%; object-fit: cover; object-position: center 70%; }
+.subtitulo, .legenda { font-family: 'Geist Mono', monospace; }
+.subtitulo { font-size: 18px; margin-bottom: 24px; }
+.informacao p { font-size: 14px; margin-bottom: 0; }
+.titulo-secao::after { content: ''; display: block; width: 64px; height: 4px; background: #2563eb; }
+.legenda { margin-bottom: 8px; }
+.titulo-secao h2 { font-weight: bold; }
+
+/* Linha do tempo */
+.secao-projetos { background: #f8fafc; }
+.linha-tempo { position: relative; list-style: none; padding: 0; margin: 0; display: grid; gap: 48px; }
+.linha-tempo::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: #e2e8f0; }
+.item-projeto { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+.ponto { position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
+.projeto { width: 100%; max-width: 480px; justify-self: end; }
+.item-projeto:nth-child(even) .projeto { grid-column: 2; justify-self: start; }
+.imagem-projeto { display: block; border: 1px solid #e2e8f0; border-radius: 4px; overflow: hidden; background: #f1f5f9; }
+.imagem-projeto img { display: block; width: 100%; aspect-ratio: 2; object-fit: contain; }
+.data-projeto, .tecnologias, .periodo { font-family: 'Geist Mono', monospace; }
+.tecnologias .badge { color: #475569 !important; }
+.projeto .btn { font-size: 14px; }
+
+/* Experiências e contato */
+.conteudo-experiencias { max-width: 1040px; }
+.cabecalho-experiencia h3 { font-size: 20px; font-weight: bold; }
+.periodo { font-size: 12px; flex-shrink: 0; align-self: start; }
+.experiencia > p { margin-bottom: 0; }
+.contatos { font-style: normal; }
+.contato { color: #2563eb; font-size: 15px; }
+.icone-contato { width: 44px; height: 44px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 8px; }
+.valor-contato { overflow-wrap: anywhere; }
+.formulario h3 { font-size: 20px; font-weight: bold; margin-bottom: 24px; }
+.form-label { font-weight: 500; }
+.form-control { padding: 12px; }
+textarea.form-control { min-height: 140px; resize: vertical; }
+.form-control[aria-invalid='true'] { border-color: #b91c1c; }
+.erro-campo { margin: 8px 0 0; color: #b91c1c; font-size: 14px; }
+.retorno { margin: 16px 0 0; }
+.retorno[data-estado='erro'] { color: #991b1b; }
+.retorno[data-estado='sucesso'] { color: #166534; }
+.rodape { background: #1e293b; color: white; font-size: 14px; }
+.redes-rodape a { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #2563eb; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .marca { font-size: 16px; }
+    .foto-perfil { width: 160px; height: 160px; }
+    .subtitulo { font-size: 16px; }
+}
+
+@media (max-width: 767px) {
+    html { scroll-padding-top: 80px; }
+    main section { padding: 40px 0; }
+    .conteudo-menu { min-height: 64px; }
+    .marca { font-size: 16px; }
+    .icone-marca { width: 24px; height: 24px; }
+    .controles-menu { margin-left: auto; }
+    .botao-idioma { padding: 4px 8px; }
+    .navegacao { display: none; position: absolute; top: 100%; left: 0; right: 0; background: white; padding: 16px 24px; border-bottom: 1px solid #e2e8f0; }
+    .navegacao.aberto { display: flex; flex-direction: column; gap: 0 !important; }
+    .navegacao a { padding: 12px 0; font-size: 18px; }
+    .fundo-menu { top: 64px; }
+    .foto-perfil { width: 160px; height: 160px; }
+    .biografia h1 { text-align: center; font-size: 24px; }
+    .subtitulo { text-align: center; font-size: 14px; }
+    .descricao { font-size: 14px; }
+    .titulo-secao h2 { font-size: 24px; }
+    .linha-tempo { padding-left: 24px; gap: 24px; }
+    .linha-tempo::before { left: 0; }
+    .item-projeto { display: block; }
+    .ponto { left: -24px; }
+    .projeto { max-width: none; }
+    .projeto .btn { align-self: stretch !important; justify-content: center; }
+    .cabecalho-experiencia { flex-direction: column; }
+    .formulario .btn { width: 100%; }
+    .rodape { flex-direction: column; font-size: 12px; text-align: center; padding-left: 16px; padding-right: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+}
