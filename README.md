@@ -6,13 +6,13 @@ Este README adapta o [template obrigatório do laboratório](https://github.com/
 
 ## 🚧 Status do Projeto
 
-**Site implementado com Bootstrap e três projetos completos. Envio real aceito pelo EmailJS em 13/10/2026. Publicação no GitHub Pages em preparação.**
+**Site publicado no GitHub Pages. Navegação, PT/EN, mídias, responsividade e formulário verificados. Envio real aceito pelo EmailJS tanto localmente quanto na URL pública; recebimento do teste local confirmado pelo proprietário.**
 
 | Sprint | Estado verificável |
 | --- | --- |
 | 01 — Planejamento e protótipo | README e wireframes originais preservados; tecnologia documentada; site navegável implementado. As interações do modo de apresentação do Figma não foram verificadas. |
-| 02 — Funcionalidades | PT/EN, timeline, experiência, contatos, responsividade e validação implementados. Fisiogrip com mídia real e repositório. Envio real aceito pelo EmailJS; confirmação na caixa de entrada pendente. |
-| 03 — Finalização | Capturas, documentação e roteiro preparados. Publicação em preparação no repositório gustavoalkimim/Portifolio. |
+| 02 — Funcionalidades | PT/EN, timeline, experiência, contatos, responsividade e validação implementados. Fisiogrip com mídia real e repositório. Envio real aceito pelo EmailJS e recebimento do teste local confirmado. |
+| 03 — Finalização | Capturas, documentação e roteiro preparados. GitHub Pages publicado e testado; capturas, README e roteiro de apresentação disponíveis. |
 
 ## 📚 Índice
 
@@ -39,7 +39,7 @@ Este README adapta o [template obrigatório do laboratório](https://github.com/
 - Design: [Portfólio Profissional no Figma](https://www.figma.com/design/nzWPeHdlCoLC9QCtnpro4x/Portifolio-Profissional?node-id=0-1).
 - GitHub pessoal: [gustavoalkimim](https://github.com/gustavoalkimim).
 - LinkedIn: [Gustavo Alkimim](https://linkedin.com/in/gustavo-alkimim-73091b24a).
-- Site publicado: **ainda não publicado**. Registrar a URL real nesta seção depois da publicação e do teste.
+- Site publicado: [gustavoalkimim.github.io/Portifolio](https://gustavoalkimim.github.io/Portifolio/).
 
 ## 📝 Sobre o Projeto
 
@@ -62,11 +62,11 @@ Não foram adicionadas biografia, habilidades, métricas, empresas ou experiênc
 - Retorno de envio somente quando a API do EmailJS responde com sucesso. Sem configuração, o formulário informa claramente que a mensagem não foi enviada.
 - Layout responsivo, foco visível, rótulos de formulário, link para pular ao conteúdo e respeito à preferência de reduzir movimento.
 
-### Pendências
+### Antes da avaliação
 
-1. **EmailJS:** conferir o recebimento na caixa de entrada de `gusalkimim@gmail.com`; a API aceitou o teste `PORTFOLIO-20261013-A5`.
-2. **Hub de Estudos:** conceder acesso ao avaliador ou decidir tornar o projeto público; o repositório continua privado.
-3. **Publicação:** aguardar a conclusão e o teste do GitHub Pages.
+- **Hub de Estudos:** conceder acesso ao avaliador ou decidir tornar o projeto público; o repositório continua privado.
+- **Figma:** conferir as interações no modo de apresentação e o acesso do professor ao arquivo; as imagens dos wireframes estão incluídas.
+- **Apresentação:** seguir o roteiro de demonstração e gravar ou apresentar conforme a orientação da disciplina.
 
 Foto pessoal, e-mail oficial, número completo do WhatsApp, repositório e captura do Fisiogrip já estão incluídos.
 
@@ -112,7 +112,7 @@ const EMAILJS = {
 };
 ```
 
-Os identificadores recebidos já foram inseridos. O destinatário oficial é `gusalkimim@gmail.com`, definido no template da conta. Não usar senhas, chaves privadas ou accessToken no front-end. O teste real `PORTFOLIO-20261013-A5` foi aceito pelo serviço, com retorno de sucesso e limpeza dos campos. O recebimento na caixa de entrada depende da confirmação do proprietário.
+Os identificadores recebidos já foram inseridos. O destinatário oficial é `gusalkimim@gmail.com`, definido no template da conta. Não usar senhas, chaves privadas ou accessToken no front-end. O teste real `PORTFOLIO-20261013-A5` foi aceito pelo serviço, com retorno de sucesso e limpeza dos campos. O proprietário confirmou o recebimento desse teste. O teste `PORTFOLIO-20261013-PAGES` também foi aceito pela API a partir da URL publicada.
 
 ## 🎨 Protótipos (Wireframes)
 
@@ -150,24 +150,22 @@ Não há `.env` nem variáveis de ambiente. Os IDs e a chave pública do EmailJS
 
 ## 🚀 Deploy
 
-**Ainda não publicado.** Após a publicação, registrar a URL real e testar o recebimento de e-mail.
+Publicado e verificado em [https://gustavoalkimim.github.io/Portifolio/](https://gustavoalkimim.github.io/Portifolio/).
 
 ### GitHub Pages
 
-1. No repositório que você escolher, colocar **o conteúdo de `Avaliado` na raiz**, incluindo `index.html`, `style.css`, `script.js`, `assets`, `docs`, README e `.nojekyll`.
-2. Configurar o EmailJS conforme a documentação antes de testar o envio publicado.
-3. No GitHub: Settings → Pages → Deploy from a branch → selecionar a branch e `/ (root)`.
-4. Aguardar a publicação e usar a URL exibida pelo GitHub. Não presumir a URL antes de ela existir.
-5. Adicionar essa origem à configuração de domínios do EmailJS quando disponível, testar navegação, mídia, PT/EN e o recebimento da mensagem.
-6. Registrar a URL testada em “Links Úteis”.
+O repositório [gustavoalkimim/Portifolio](https://github.com/gustavoalkimim/Portifolio) publica a branch `main`, pasta `/ (root)`, com HTTPS. O arquivo `.nojekyll` permite servir os arquivos estáticos diretamente. Cada atualização enviada à branch inicia uma nova publicação.
 
-No plano GitHub Free, Pages exige repositório público. Escolher a visibilidade do novo repositório conscientemente ou usar Vercel. O envio via EmailJS é compatível com hospedagem estática, pois é uma chamada HTTPS a um serviço externo. Os caminhos do site são relativos e foram testados em uma subpasta como a usada por Pages.
+Para atualizar:
 
-### Vercel
+1. Alterar e testar `index.html`, `style.css`, `script.js` ou os recursos necessários.
+2. Enviar os arquivos à branch `main`, preservando `assets/`, `docs/` e `.nojekyll`.
+3. Aguardar a execução de **pages build and deployment** em Actions.
+4. Abrir a URL pública e conferir navegação, idiomas, imagens e formulário.
 
-Alternativa já prevista no README original: importar o repositório de destino, usar preset **Other**, sem comando de build e servir a raiz contendo `index.html`. Se o repositório guardar a pasta `Avaliado`, escolher `Avaliado` como Root Directory. Configurar o EmailJS para a origem publicada e registrar a URL real após os testes.
+O envio via EmailJS é compatível com GitHub Pages: o navegador chama o serviço externo por HTTPS, sem exigir um back-end próprio. Os caminhos relativos foram verificados na subpasta `/Portifolio/`. Se configurar uma lista de origens autorizadas no EmailJS, incluir `https://gustavoalkimim.github.io`.
 
-**Esta pasta contém os arquivos da entrega.** Colocar seu conteúdo na raiz do novo repositório.
+O conteúdo de `Avaliado` corresponde à raiz do repositório. Backups e ferramentas locais de verificação não fazem parte da publicação.
 
 ## 📂 Estrutura de Pastas
 
@@ -202,6 +200,7 @@ Roteiro de aproximadamente três minutos: [docs/DEMONSTRACAO.md](docs/DEMONSTRAC
 | Desktop em inglês | [Abrir](docs/demo/desktop-en.png) |
 | Celular em português | [Abrir](docs/demo/mobile-pt.png) |
 | Celular em inglês | [Abrir](docs/demo/mobile-en.png) |
+| Envio aceito na publicação | [Abrir](docs/demo/formulario-publicado.png) |
 
 ## 🧪 Testes
 
@@ -213,19 +212,19 @@ Código, recursos locais e estrutura foram conferidos por verificações locais;
 | Menu e âncoras em celular e desktop | Aprovada |
 | Conteúdo, atributos acessíveis, placeholders e status PT/EN | Aprovada |
 | Preferência de idioma após recarregar | Aprovada |
-| Abertura via servidor local | Aprovada; publicação em subpasta a conferir após o deploy |
+| Servidor local e GitHub Pages em /Portifolio/ | Aprovada |
 | Fontes, ícones e mídias presentes | Carregaram sem erros no navegador |
 | Timeline cronológica, número completo do telefone e ausência dos itens previstos | Aprovada |
 | Campos vazios, só espaços e e-mail inválido | Rejeitados com mensagens claras |
-| Integração EmailJS | Envio real aceito com template_zopdxbp; retorno de sucesso e campos limpos |
+| Integração EmailJS | Envio real aceito localmente e na URL pública; retorno de sucesso e campos limpos |
 | Falha real do EmailJS | Mensagem de erro exibida e campos preservados |
 | Envio duplicado enquanto aguarda o serviço | Bloqueado |
-| Recebimento real de e-mail | Aguardando confirmação na caixa de entrada pelo proprietário |
-| URL pública do portfólio | Publicação em preparação |
+| Recebimento real de e-mail | Teste local A5 confirmado pelo proprietário |
+| URL pública do portfólio | HTTP 200; 25 URLs de código e recursos verificadas, sem arquivos ausentes |
 
 Links dos projetos foram conferidos usando a conta GitHub autenticada. Fisiogrip e PetVet são públicos e o Hub é privado. Os destinos de contato correspondem aos dados fornecidos. Não foram enviadas mensagens pelo WhatsApp ou LinkedIn. O envio real do formulário foi aceito pelo EmailJS.
 
-Testes anteriores com respostas interceptadas verificaram o tratamento de sucesso, erros, limites e falhas de rede. Nesta revisão, o teste real com o template configurado foi aceito pelo EmailJS. A aceitação da API e a confirmação do recebimento são registradas separadamente.
+Testes anteriores com respostas interceptadas verificaram o tratamento de sucesso, erros, limites e falhas de rede. Nesta revisão, o teste real com o template configurado foi aceito pelo EmailJS. O recebimento do teste local foi confirmado pelo proprietário. O teste publicado também recebeu sucesso da API. A aceitação da API e a confirmação na caixa de entrada são evidências distintas.
 
 ## 🔗 Documentações utilizadas
 

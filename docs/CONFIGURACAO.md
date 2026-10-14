@@ -4,7 +4,7 @@
 
 O Service ID, Template ID e Public Key informados pelo proprietário já estão no objeto `EMAILJS`, no início de `script.js`. O e-mail oficial de recebimento é `gusalkimim@gmail.com`.
 
-O teste real `PORTFOLIO-20261013-A5`, em 13/10/2026, foi aceito pelo EmailJS. O formulário exibiu sucesso e limpou os campos. A confirmação de recebimento na caixa de entrada deve ser feita pelo proprietário.
+O teste real `PORTFOLIO-20261013-A5`, em 13/10/2026, foi aceito pelo EmailJS. O formulário exibiu sucesso e limpou os campos. O proprietário confirmou o recebimento. O teste `PORTFOLIO-20261013-PAGES` também foi aceito pela API a partir da URL publicada.
 
 Configuração usada:
 
@@ -22,6 +22,13 @@ Para manter ou reconfigurar:
 6. Se usar uma lista de origens autorizadas no EmailJS, incluir a origem da URL publicada. Respeitar os limites do plano contratado.
 
 Nunca colocar senha de e-mail, token do GitHub ou chave privada no JavaScript. Os três identificadores usados aqui são públicos; o destinatário é definido no template da conta, não pelo visitante.
+
+## Site publicado
+
+- Repositório: https://github.com/gustavoalkimim/Portifolio
+- Site: https://gustavoalkimim.github.io/Portifolio/
+- GitHub Pages: branch `main`, raiz `/`, HTTPS.
+- Se usar uma lista de origens no EmailJS, incluir `https://gustavoalkimim.github.io`.
 
 ## Bootstrap
 

@@ -26,11 +26,12 @@ Usar uma mensagem claramente identificada como teste, enviar pelo formulário e 
 
 Explicar a separação: `index.html` organiza; `style.css` apresenta; `script.js` traduz, monta a timeline e interage. HTML e JavaScript puros dispensam build e permitem hospedagem estática. O Bootstrap organiza colunas, cards, formulário e botões; style.css personaliza o desenho claro e azul. O EmailJS encaminha o POST HTTPS para o serviço de e-mail conectado.
 
-Mostrar o README e as instruções de execução. **Após a publicação autorizada**, abrir a URL real do site e demonstrar que ela funciona fora do computador local. Enquanto não houver publicação, declarar essa pendência e não substituir uma URL pública por localhost.
+Mostrar o README e as instruções de execução. Abrir [o site publicado](https://gustavoalkimim.github.io/Portifolio/) e demonstrar que funciona fora do computador local. A hospedagem usa GitHub Pages, branch main e raiz do repositório.
 
 ## Antes da apresentação final
 
 - Conferir na caixa de entrada o recebimento das mensagens de teste do formulário.
 - Definir acesso do avaliador ao Hub privado.
-- Publicar, testar a URL real e registrar o endereço no README.
+- Abrir a URL pública e ensaiar a apresentação seguindo este roteiro.
+- Conferir acesso e navegação do protótipo no modo de apresentação do Figma.
 - Conferir o enquadramento da foto pessoal incluída.
