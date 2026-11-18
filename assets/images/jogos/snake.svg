@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+<rect width="600" height="600" fill="#0f2417"/>
+<g stroke="#1c3b28" stroke-width="2"><path d="M60 0V600M0 60H600"/><path d="M120 0V600M0 120H600"/><path d="M180 0V600M0 180H600"/><path d="M240 0V600M0 240H600"/><path d="M300 0V600M0 300H600"/><path d="M360 0V600M0 360H600"/><path d="M420 0V600M0 420H600"/><path d="M480 0V600M0 480H600"/><path d="M540 0V600M0 540H600"/></g>
+<g fill="#4ade80"><rect x="124" y="304" width="52" height="52" rx="10"/><rect x="184" y="304" width="52" height="52" rx="10"/><rect x="244" y="304" width="52" height="52" rx="10"/><rect x="304" y="304" width="52" height="52" rx="10"/><rect x="304" y="244" width="52" height="52" rx="10"/><rect x="304" y="184" width="52" height="52" rx="10"/><rect x="364" y="184" width="52" height="52" rx="10"/></g>
+<rect x="424" y="184" width="52" height="52" rx="10" fill="#d9ffe6"/><circle cx="462" cy="200" r="5" fill="#0f2417"/>
+<text x="150" y="168" font-family="monospace" font-size="56" font-weight="700" fill="#ffd166" text-anchor="middle">{ }</text>
+<text x="450" y="468" font-family="monospace" font-size="56" font-weight="700" fill="#ffd166" text-anchor="middle">;</text>
+</svg>

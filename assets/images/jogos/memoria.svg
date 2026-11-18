@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+<rect width="600" height="600" fill="#1d1633"/>
+<g fill="#2b2250" stroke="#8b7cf6" stroke-width="4"><rect x="75" y="75" width="130" height="130" rx="16"/><rect x="75" y="235" width="130" height="130" rx="16"/><rect x="75" y="395" width="130" height="130" rx="16"/><rect x="235" y="75" width="130" height="130" rx="16"/><rect x="235" y="235" width="130" height="130" rx="16"/><rect x="235" y="395" width="130" height="130" rx="16"/><rect x="395" y="75" width="130" height="130" rx="16"/><rect x="395" y="235" width="130" height="130" rx="16"/><rect x="395" y="395" width="130" height="130" rx="16"/></g>
+<g fill="#f2f5f3" stroke="#8b7cf6" stroke-width="4"><rect x="75" y="75" width="130" height="130" rx="16"/><rect x="395" y="235" width="130" height="130" rx="16"/></g>
+<g fill="none" stroke="#1d1633" stroke-width="8" stroke-linejoin="round"><path d="M140 100l34 20v40l-34 20-34-20v-40z"/><path d="M460 260l34 20v40l-34 20-34-20v-40z"/></g>
+<g font-family="monospace" font-size="64" font-weight="700" fill="#8b7cf6" text-anchor="middle"><text x="300" y="162">?</text><text x="140" y="322">?</text><text x="300" y="482">?</text><text x="460" y="162">?</text></g>
+</svg>
