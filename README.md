@@ -2,7 +2,7 @@
 
 Portfólio bilíngue (PT/EN) de **Gustavo Henrique Santos e Silva**, estudante de Ciência da Computação na PUC Minas, com uma experiência inspirada em consoles: abertura com marca própria, Início com trilhos de cartões, Guia lateral, biblioteca, vitrine, busca, conquistas e quatro jogos autorais. Feito em **HTML, CSS e JavaScript puros**, sem framework e sem etapa de build, para a disciplina de Desenvolvimento de Interfaces Web (DIW).
 
-Esta versão evolui o portfólio publicado em https://gustavoalkimim.github.io/Portifolio/ seguindo a especificação em [`PLANO_PORTFOLIO_XBOX.md`](PLANO_PORTFOLIO_XBOX.md) e o mapa [`mapa-xbox-portfolio.svg`](mapa-xbox-portfolio.svg).
+Esta versão evolui o portfólio anterior (publicado antes no GitHub Pages) e está no ar em https://www.gustavoalkimim.dev/, seguindo a especificação em [`PLANO_PORTFOLIO_XBOX.md`](PLANO_PORTFOLIO_XBOX.md) e o mapa [`mapa-xbox-portfolio.svg`](mapa-xbox-portfolio.svg).
 
 > Projeto pessoal e acadêmico. **Não é um produto da Microsoft nem do Xbox** e não tem vínculo com essas marcas. Marca, ícones, sons, artes e jogos são próprios; nenhum logo, som, ícone, capa ou recurso oficial foi usado.
 
@@ -20,7 +20,7 @@ Esta versão evolui o portfólio publicado em https://gustavoalkimim.github.io/P
 - [O que não foi verificado](#o-que-não-foi-verificado)
 - [Limitações conhecidas](#limitações-conhecidas)
 - [Decisões tomadas](#decisões-tomadas)
-- [Publicação no GitHub Pages](#publicação-no-github-pages)
+- [Publicação](#publicação)
 - [Créditos e licenças](#créditos-e-licenças)
 
 ## Como rodar
@@ -31,7 +31,7 @@ Não há dependências nem build. Como o site usa módulos ES (`<script type="mo
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Abra http://127.0.0.1:8000/. Para simular exatamente o GitHub Pages (site dentro de `/Portifolio/`), rode o comando na **pasta-mãe** e abra http://127.0.0.1:8000/Portifolio/. A extensão Live Server do VS Code também funciona.
+Abra http://127.0.0.1:8000/. Para testar o site dentro de uma subpasta (`/Portifolio/`, como era no GitHub Pages), rode o comando na **pasta-mãe** e abra http://127.0.0.1:8000/Portifolio/. Na raiz do domínio próprio ele também funciona, pois todos os caminhos são relativos. A extensão Live Server do VS Code também funciona.
 
 Sem JavaScript, o `index.html` mostra uma versão básica com perfil, projetos, experiência e contatos.
 
@@ -58,7 +58,7 @@ Sem JavaScript, o `index.html` mostra uma versão básica com perfil, projetos, 
 
 ## Rotas
 
-Rotas por hash, compatíveis com GitHub Pages em subpasta. Voltar/avançar do navegador funcionam; o botão Voltar do site segue o caminho percorrido e, na primeira tela visitada, vai para um destino seguro.
+Rotas por hash, funcionam em qualquer hospedagem estática, na raiz ou em subpasta. Voltar/avançar do navegador funcionam; o botão Voltar do site segue o caminho percorrido e, na primeira tela visitada, vai para um destino seguro.
 
 `#/inicio` · `#/biblioteca` (aceita `?tipo=projeto|jogo`, `?tec=React`, `?ano=2026`) · `#/vitrine` · `#/projetos/{fisiogrip|petvet|hub}` · `#/jogos/{snake|memoria|nave|labirinto}` · `#/perfil` · `#/experiencias` · `#/conquistas` · `#/capturas` · `#/contato` · `#/ajuda` · `#/configuracoes` (aceita `?secao=…`).
 
@@ -160,7 +160,7 @@ As tecnologias da Memória ilustram o jogo e não comprovam habilidade profissio
 
 ## Testes realizados
 
-Feitos em 18/11/2026 no navegador embutido do aplicativo Claude (Chromium), servindo a pasta-mãe para reproduzir o caminho `/Portifolio/` do GitHub Pages.
+Feitos em 18/11/2026 no navegador embutido do aplicativo Claude (Chromium), servindo a pasta-mãe para reproduzir o caminho `/Portifolio/` da hospedagem anterior (GitHub Pages). Não foram refeitos na raiz do domínio próprio; ali só foi conferido que o site carrega.
 
 | Verificação | Resultado |
 | --- | --- |
@@ -220,15 +220,13 @@ Feitos em 18/11/2026 no navegador embutido do aplicativo Claude (Chromium), serv
 - **Sucesso do formulário limpa os campos**; erro e resultado desconhecido preservam.
 - **Labirinto**: mapa único, verificado por busca em largura antes de cada partida.
 
-## Publicação no GitHub Pages
+## Publicação
 
-Repositório: https://github.com/gustavoalkimim/Portifolio — esta versão fica na branch **`xbox-portifolio`**. O GitHub Pages do repositório publica essa branch, na raiz, em:
+O site é publicado em **https://www.gustavoalkimim.dev/** (servido pela Vercel; o site é estático e não precisa de build). O repositório é https://github.com/gustavoalkimim/Portifolio, e a versão atual está na branch `main`.
 
-**https://gustavoalkimim.github.io/Portifolio/**
+O GitHub Pages do repositório foi **desativado**: o endereço antigo `gustavoalkimim.github.io/Portifolio/` não responde mais. Como todos os caminhos são relativos e as rotas usam hash, o mesmo código funciona na raiz do domínio próprio e em subpastas, sem alteração.
 
-Para encontrar o link pelo GitHub: abra o repositório → **Settings** → **Pages** (menu lateral, seção "Code and automation"): o endereço aparece em "Your site is live at", com o botão **Visit site**. Também dá para achar pela página inicial do repositório: na coluna da direita, **Deployments** → **github-pages** mostra o último deploy com o link.
-
-Para voltar a publicar a versão anterior, em Settings → Pages troque "Branch" de `xbox-portifolio` para `main` e salve.
+Como o deploy é configurado no painel da Vercel (não no repositório), confira lá qual branch publica o domínio antes de contar com um deploy automático ao enviar mudanças.
 
 ## Créditos e licenças
 
